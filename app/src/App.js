@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="grid-container">
+      <header className="row">
+        <div>
+          <a className="brand" href="/">
+            amazona
+          </a>
+        </div>
+        <div className="row">
+          <a href="/cart">Cart</a>
+          <a href="/signin">Sign In</a>
+        </div>
       </header>
+      <main>
+        <div className="row center">
+          {data.products?.map((product, key) => (
+            <div key={product._id} className="card">
+              <a href={`/product/${product._id}`}>
+                <img
+                  className="medium"
+                  src={product.image}
+                  alt={product.name}
+                />
+              </a>
+              <div className="card-body">
+                <h2>{product.brand}</h2>
+                <a href={`/product/${product._id}`}>
+                  <h2>{product.name}</h2>
+                </a>
+                <div className="rating">
+                  <span>
+                    <i className="fa fa-star"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <span>
+                    <i class="fa fa-star-half-o"></i>
+                  </span>
+                </div>
+                <div class="price">${product.price}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+      <footer class="row center">All right reserved</footer>
     </div>
   );
 }
