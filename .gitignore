@@ -4,3 +4,5 @@ node_modules /
 #production
 build
 app/package-lock.json
+.env
+README.md

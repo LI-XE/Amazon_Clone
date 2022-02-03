@@ -1,0 +1,27 @@
+{
+  "name": "amazona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-react": "^7.28.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LI-XE/Amazon_Clone.git"
+  },
+  "keywords": [
+    "En124600"
+  ],
+  "author": "Xiangen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LI-XE/Amazon_Clone/issues"
+  },
+  "homepage": "https://github.com/LI-XE/Amazon_Clone#readme"
+}
