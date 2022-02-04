@@ -6,3 +6,6 @@ build
 app/package-lock.json
 .env
 README.md
+.eslintrc.js
+package-lock.json
+package.json
