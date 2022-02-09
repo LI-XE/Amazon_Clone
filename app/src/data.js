@@ -42,7 +42,7 @@ const data = {
       name: "Baby Girl Winter Snowsuit",
       category: "Snowsuit",
       image: "/images/product4.jpg",
-      price: 3.94,
+      price: 33.94,
       countInStock: 5,
       rating: 4.5,
       numReviews: 10,
