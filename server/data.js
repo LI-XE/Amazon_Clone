@@ -17,7 +17,6 @@ const data = {
   ],
   products: [
     {
-      _id: "1",
       brand: "NinkyNonk",
       name: "Toddler Fleece Jacket",
       category: "Jacket",
@@ -29,7 +28,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "2",
       brand: "Happy Cherry",
       name: "Snowsuit Jumpsuit Down Coat",
       category: "Coat",
@@ -41,7 +39,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "3",
       brand: "CECORC",
       name: "Winter Coats for Kids with Hoods",
       category: "Coat",
@@ -53,7 +50,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "4",
       brand: "Tumaron",
       name: "Baby Girl Winter Snowsuit",
       category: "Snowsuit",
@@ -65,7 +61,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "5",
       brand: "Fairy Baby",
       name: "Toddler Baby Winter Hooded Jacket",
       category: "Jacket",
