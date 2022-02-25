@@ -20,9 +20,9 @@ export default function ShippingAddressScreen(props) {
   const [address, setAddress] = useState(shippingAddress.address || "");
   const [city, setCity] = useState(shippingAddress.city || "");
   const [postalCode, setPostalCode] = useState(
-    saveShippingAddress.postalCode || ""
+    shippingAddress.postalCode || ""
   );
-  const [country, setCountry] = useState(saveShippingAddress.country || "");
+  const [country, setCountry] = useState(shippingAddress.country || "");
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(
