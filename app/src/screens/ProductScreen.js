@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import { addToCart } from "../actions/cartActions";
 import { detailsProduct } from "../actions/productActions";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
@@ -27,7 +28,9 @@ export default function ProductScreen(props) {
   const addToCartHandler = () => {
     console.log(`Product ID: ${productId}`);
     console.log(`QTY: ${qty}`);
-    navigate(`/cart/${productId}?qty=${qty}`);
+    dispatch(addToCart(productId, qty));
+    // navigate(`/cart/${productId}?qty=${qty}`);
+    navigate("/cart");
   };
 
   return (

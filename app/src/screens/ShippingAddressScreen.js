@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { saveShippingAddress } from "../actions/cartActions";
@@ -23,6 +23,13 @@ export default function ShippingAddressScreen(props) {
     shippingAddress.postalCode || ""
   );
   const [country, setCountry] = useState(shippingAddress.country || "");
+
+  useEffect(() => {
+    if (!userInfo) {
+      navigate("/signin?redirect=/shipping");
+    }
+  }, [userInfo, navigate]);
+
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(

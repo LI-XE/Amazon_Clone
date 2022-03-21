@@ -28,6 +28,11 @@ export const userRegisterReducer = (state = {}, action) => {
 
     case USER_SIGNOUT:
       return {};
+    // return {
+    //   ...state,
+    //   userInfo: null,
+    //   cart: { cartItems: [], shippingAddress: {}, paymentMethod: {} },
+    // };
 
     default:
       return state;
@@ -47,6 +52,11 @@ export const userSigninReducer = (state = {}, action) => {
 
     case USER_SIGNOUT:
       return {};
+    // return {
+    //   ...state,
+    //   userInfo: null,
+    //   cart: { cartItems: [], shippingAddress: {}, paymentMethod: {} },
+    // };
 
     default:
       return state;
